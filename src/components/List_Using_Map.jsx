@@ -1,33 +1,29 @@
+import { useState } from "react";
 
 const List = () => {
   const fruits = ["Apple", "Banana", "Pine Apple", "Orange", "Mango", "Grapes"];
 
-  const HandleItemPrint = (item) => {
-    console.log(item);
-  }
+  const [selectedIndex, setSelectedIndex] = useState(-1);
+  console.log(useState(-1));
+
+  // let selectedIndex = -1;
+
+  // const HandleItemStyle = (item, index) => {
+  //   selectedIndex = index;
+  //   console.log(item, index);
+  // }
 
   return (
     <>
-      {/* onClick */
-      /* <ul className="list-decimal pl-10 text-2xl">
-        {fruits.map((fruit) => (    // If we use () bracket Then we don't need to use return statement
-            <li onClick={ () => HandleItemPrint(fruit) } key={fruit}>{fruit}</li>
-        ))}
-      </ul> */}
-
-
-      {/* onMouseEnter
       <ul className="list-decimal pl-10 text-2xl">
-        {fruits.map((fruit) => (    // If we use () bracket Then we don't need to use return statement
-            <li onMouseEnter={ () => HandleItemPrint(fruit) } key={fruit}>{fruit}</li>
-        ))}
-      </ul> */}
-
-
-      onDoubleClick
-      <ul className="list-decimal pl-10 text-2xl">
-        {fruits.map((fruit) => (    // If we use () bracket Then we don't need to use return statement
-            <li onDoubleClick={ () => HandleItemPrint(fruit) } key={fruit}>{fruit}</li>
+        {fruits.map((fruit, index) => (
+          <li 
+            className = {selectedIndex === index ? "bg-cyan-300 rounded-xl w-1/6 p-2 text-black" : ""} 
+            onClick={ () => setSelectedIndex(index) } 
+            key={fruit}
+          >
+            {fruit}
+          </li>
         ))}
       </ul>
     </>
