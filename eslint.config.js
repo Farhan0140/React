@@ -33,6 +33,8 @@ export default [
         'warn',
         { allowConstantExport: true },
       ],
+      // For Temporary  [Not a good Practice]
+      "react/prop-types": "off",  // For Turn off, "warn" for warning
     },
   },
 ]

@@ -1,5 +1,4 @@
 
-// eslint-disable-next-line react/prop-types
 const Button = ({handleClick, children, bgColor="primary"}) => {
   
   const BtnColor = {

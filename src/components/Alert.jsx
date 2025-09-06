@@ -1,6 +1,5 @@
 import { CircleX } from 'lucide-react';
 
-// eslint-disable-next-line react/prop-types
 const Alert = ({ color="primary", children, onClose }) => {
 
   const AlertStyle = {

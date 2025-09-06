@@ -1,5 +1,4 @@
 
-// eslint-disable-next-line react/prop-types
 const Just_Test = (props) => {
 
   return (
