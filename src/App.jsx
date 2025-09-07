@@ -1,10 +1,9 @@
-import './App.css';
-import PlayWithButton from './components/playWithButton';
+import Person from './components/Person';
 
 function App() {
 
   return (
-    <PlayWithButton />
+    <Person />
   )
 }
 
