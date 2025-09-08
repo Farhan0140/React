@@ -5,9 +5,12 @@ const Person = () => {
   const [person, setPerson] = useState({
     firstName: "Farhan",
     lastName: "Nadim",
-    address: "Dhaka",
     phone: "123",
     email: "n@email.com",
+    address: {
+      city: "Mirpur",
+      state: "Dhaka",
+    }
   });
 
   const HandleChangeName = () => {
@@ -15,9 +18,10 @@ const Person = () => {
     // Update Person  & Add new Field
     const newPerson = {
         ...person,
-        firstName: "Mr.",
-        phone: "123456789",
-        department: "CSE",    // Added new field to person, 
+        address: {
+          ...person.address,
+          city: "Dhanmondi",
+        }
     }
 
     setPerson(newPerson)
@@ -26,10 +30,10 @@ const Person = () => {
   return (
     <div className="p-10">
       <h1 className="text-2xl font-semibold">Full Name: {person.firstName} {person.lastName}</h1>
-      <h1> {person.address} </h1>
       <h1> {person.phone} </h1>
       <h1> {person.email} </h1>
-      <h1 className="mb-10"> {person.department} </h1>
+      <h1> {person.department} </h1>
+      <p className="mb-10"> {person.address.city}, {person.address.state} </p>
       <button
         onClick={HandleChangeName}
         className="p-5 bg-blue-400 rounded-2xl"
