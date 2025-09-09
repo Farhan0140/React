@@ -1,9 +1,9 @@
-import Skills from './components/skills';
+import Employee from "./components/Employee"
 
 function App() {
 
   return (
-    <Skills />
+    <Employee />
   )
 }
 
