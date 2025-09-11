@@ -1,10 +1,26 @@
+import { useRef } from "react";
 
 const User_Input = () => {
+
+  const nameRef = useRef(null);
+  const ageRef = useRef(null);
+
+  const person = {
+    name: "",
+    age: 0
+  }
 
   const HandleSubmit = (event) => {
     event.preventDefault();
     
-    console.log("Form Submitted");
+    if(nameRef.current !== null) {
+      person.name = nameRef.current.value;
+    }
+    if(ageRef.current !== null) {
+      person.age = parseInt(ageRef.current.value);
+    }
+
+    console.log(person);
   }
 
   return (
@@ -17,6 +33,7 @@ const User_Input = () => {
             Name
           </label>
           <input 
+            ref={nameRef}
             id="name" 
             type="text" 
             placeholder="Enter Your Name" 
@@ -31,8 +48,9 @@ const User_Input = () => {
             Age
           </label>
           <input 
+            ref={ageRef}
             id="age" 
-            type="text" 
+            type="number" 
             placeholder="Enter Your Name" 
             className="p-3 border rounded-xl w-full my-2 focus:outline-none focus:ring-1 focus:border-none focus:ring-blue-600"
           />
