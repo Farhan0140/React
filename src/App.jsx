@@ -1,10 +1,10 @@
-import Effect from "./components/Effect"
+import API_Fatch from "./components/API_Fatch"
 
 function App() {
   
   return (
     <div>
-      <Effect />
+      <API_Fatch />
     </div>
   )
 }
