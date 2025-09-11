@@ -1,10 +1,10 @@
-import API_Fatch from "./components/API_Fatch"
+import API_Fetch from "./components/API_Fetch"
 
 function App() {
   
   return (
     <div>
-      <API_Fatch />
+      <API_Fetch />
     </div>
   )
 }

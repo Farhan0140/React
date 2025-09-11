@@ -1,7 +1,7 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 
-const API_Fatch = () => {
+const API_Fetch = () => {
   const [users, setUsers] = useState([]);
   const [error, setError] = useState("");
 
@@ -37,4 +37,4 @@ const API_Fatch = () => {
   );
 };
 
-export default API_Fatch;
+export default API_Fetch;
