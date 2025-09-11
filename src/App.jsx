@@ -1,10 +1,10 @@
-import API_Fetch from "./components/API_Fetch"
+import User_Input from "./components/Forms/User_Input"
 
 function App() {
   
   return (
     <div>
-      <API_Fetch />
+      <User_Input />
     </div>
   )
 }
