@@ -1,10 +1,10 @@
-import InputState from "./components/Forms/InputState"
+import HookForm from "./components/Forms/HookForm"
 
 function App() {
   
   return (
     <div>
-      <InputState />
+      <HookForm />
     </div>
   )
 }
