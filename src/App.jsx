@@ -1,10 +1,10 @@
-import HookForm from "./components/Forms/HookForm"
+import CartApp from "./components/cart/CartApp"
 
 function App() {
   
   return (
     <div>
-      <HookForm />
+      <CartApp />
     </div>
   )
 }
