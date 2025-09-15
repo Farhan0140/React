@@ -1,10 +1,10 @@
-import CartApp from "./components/cart/CartApp"
+import Team from "./components/simple_project/Team"
 
 function App() {
   
   return (
     <div>
-      <CartApp />
+      <Team />
     </div>
   )
 }
