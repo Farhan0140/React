@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 const Team = () => {
 
   useEffect(() => {
-    fetch("./public/experts.json")
+    fetch("/experts.json")
     .then(res => res.json())
     .then(data => setMembers(data))
   }, []);
